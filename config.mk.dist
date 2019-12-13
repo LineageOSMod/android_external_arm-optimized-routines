@@ -15,10 +15,6 @@ CFLAGS = -std=c99 -pipe -O3
 CFLAGS += -Wall -Wno-missing-braces
 CFLAGS += -Werror=implicit-function-declaration
 
-# Enable debug info.
-HOST_CFLAGS += -g
-CFLAGS += -g
-
 # Optimize the shared libraries on aarch64 assuming they fit in 1M.
 #CFLAGS_SHARED = -fPIC -mcmodel=tiny
 
